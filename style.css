@@ -1,0 +1,16 @@
+p{
+    text-align: center;
+    background-size: 60px;
+    background-color: rgb(175, 219, 243);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 10%;
+    margin-bottom: 12%;
+}
+img {
+    width: 60px;
+}
+.contenedor{
+    margin: 10%;
+    border: 1px black;
+    
+}

@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <head>
-        <h1>Menu</h1>
+        <p>Productos</p>
     </head>
     <main>
-        <title>Productos</title>
+        <table class="table">
+           <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Materia</th>
+                    <th scope="col">Descripcion</th>
+                    <th scope="col">Precio (ARG)</th>
+                    <th scope="col">Foto</th>
+                </tr>
+            </thead>
+            <tbody id="tBodyTiendas"> </tbody>
+        </table>
     </main>
     <footer>
-        <title>Accesos rapidos</title>
-        <div class="container">
+        <div class="contenedor">
+            <p class="Text-center">Ingresar a usuario para compras</p>
             <form id="idForm">
                 <div class="mb-3">
-                  <label for="username" class="form-label">Usuario</label>
+                  <label for="username" class="form-label">Username</label>
                   <input type="text" class="form-control" id="username">
-                </Div>
+                </div>
                 <div class="mb-3">
-     <label to="correo electrónico" class="form-label">Email</label>
+                    <label for="email" class="form-label">Email</label>
                     <input type="email" class="form-control" id="email">
-                  </Div>
-                  <div class="mb-3">
-                    <label for="password" class="form-label">Contraseña</label>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
                     <input type="password" class="form-control" id="password">
-                  </Div>
-                <button type="submit" class="btn btn-dark">Crear Usuario</button>
-              </forma>
+                </div>
+                <button type="submit" class="btn btn-dark">Ingresar Usuario</button>
+            </form>
         </div>
         <br><br>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-
     <script src="script.js"></script>
 </body>
 </html>
